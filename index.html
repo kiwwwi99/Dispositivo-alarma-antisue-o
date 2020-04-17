@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Dispositivo Antisueño</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="img/logo1.png" style="width: 15%;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="perro navbar-nav ml-auto">
+            <li class="pnav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pago de Envio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="background-overlay text-white py-5">
+        <div class="container">
+          <div class="row d-flex h-100">
+            <div class="col-sm-6 text-center justify-content-center align-self-center">
+              <h1 class=" rolando font-weight-bold">Gratis! Unicamente pagas el envio <br> Dispositivo Antisueño Para Conductor</h1>
+              
+
+              <p class="text-justify font-weight-bold"> MUY IMPORTANTE: Recuerda que este producto es 100% GRATIS!, pero debes pagar el envio, el producto se encuentra en nuestra bodega en USA. Esto explica porque la demora en el tiempo de entrega. Este producto se entrega en la puerta de tu casa en menos de 30 dias. Despues del Pago del envio, te enviaremos el numero para hacer seguimiento a tu producto.</p>
+            </p>
+            <a href="https://biz.payulatam.com/B0cf037790C2C40"><img src="http://www.payulatam.com/img-secure-2015/boton_pagar_grande.png"></a>
+            </div>
+            <div class="col-sm-6">
+              <img src="img/producto.jpg" class="img-fluid d-none d-sm-block">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- NEWSLETTER  -->
+    <section id="newsletter" class="bg-warning text-white py-5" style="height: 250px;">
+      <div class="container">
+        <div class="row">
+          <div class="display-7 container my-2">
+            <h6 class="display-6 text-center text-uppercase font-weight-bold">OFERTA EXCLUSIVA HASTA EL PROXIMO 21 DE ABRIL</h6>
+            <ul>
+              <li><span id="days"></span>Dias</li>
+              <li><span id="hours"></span>Horas</li>
+              <li><span id="minutes"></span>Minutos</li>
+              <li><span id="seconds"></span>Segundos</li>
+            </ul>
+          </div>
+          <script>
+              const second = 1000,
+                    minute = second * 60,
+                    hour = minute * 60,
+                    day = hour * 24;
+
+        let countDown = new Date('april 21, 2020 12:00:00').getTime(),
+         x = setInterval(function() {    
+
+          let now = new Date().getTime(),
+       distance = countDown - now;
+
+
+         
+         document.getElementById('days').innerText = Math.floor(distance / (day)),
+         document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+         document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+        
+
+
+         }, second)
+          
+          </script>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+
+    <section class="py-5">
+        <div class="container">
+          <h3 class="leo text-justify">Caracteristicas</h3>
+        <div class="row">
+         <div class="col-md-3">
+            <div class="card text-center border-primary">
+              <div class="card-body">
+                <h3> 1. </h3>
+                <p class="text-justify">
+                  Colócalo detrás del oído derecho, avisa cuando la cabeza baja en los grados de 15 ° a 20 °.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-white bg-primary text-center">
+              <div class="card-body">
+                <h3>2.</h3>
+                <p class="text-justify">
+                  Alimentado por baterías de botón AG3.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center border-primary">
+              <div class="card-body">
+                <h3>3.</h3>
+                <p class="text-justify">
+                  Fácil de usar y cómodo de llevar durante mucho tiempo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-white bg-primary text-center">
+              <div class="card-body">
+                <h3>4.</h3>
+                <p class="text-justify">
+                  La alarma de seguridad del conductor puede ayudar a prevenir accidentes causados por el sueño del conductor al conducir.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="m5 text-center bg-warning">
+      <div class="container">
+        <div class="row">
+          <div class="m-5">
+            <h3>¿Porque Este Producto?</h3>
+            <p class="text-justify">
+              La alarma de siesta es una innovadora alarma antisomnolencia que puede salvar vidas. Se usa sobre la oreja y tiene un sensor de posición electrónico. Cuando tu cabeza se mueve hacia delante, suena una alarma fuerte para despertarte al instante y alertar a tus pasajeros.
+La alarma de siesta no solo está diseñada para conductores, sino que también es perfecta para personas que necesitan estar completamente alerta mientras está de servicio, por ejemplo, guardias de seguridad, operarios de máquinas e incluso estudiantes mientras realizan estudios o donde se requiere concentración.
+            </p>
+            <h4 class="text-justify ">Uso de direcciones:</h4>
+            <p class="text-justify">1-Llévalo en la oreja derecha como se muestra en la imagen. <br>2-En el interruptor. <br>3-Examina si está en el funcionamiento normal: emite un pitido cuando inclinas la cabeza hacia delante y no hace ruido mientras estás sentado recto, está en estado normal. <br>4-Por favor, apague el swith cuando no lo use. <br> 5- Manténgalo alejado de altas temperaturas y humedad. </p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCORDION -->
+    <section class="container text-center p-5">
+      <div class="row">
+        <div class="accordion" id="accordionExample">
+          <h3 class="rut text-justify">Video</h3>
+          
+          <div>
+            <iframe width="720" height="315" src="https://www.youtube.com/embed/wbJ8T6FhPSk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>       
+        </div>
+      </div>
+    </section>
+<!-- aqwi va la parte de los tesminoios, solo tiene que cambiar, los nombres, las imagemes del los testigos y las versiones de testimonii-->
+    <section class="text-center team bg-warning">
+      <div class="container p-5">
+        <h2 class="text-center text-black">Testimonios</h2>
+        <p class="text-black">
+          Estos son los testimonios de las personas que han adquirido el dispositivo antisueño.!
+        </p>
+        <div class="row">
+          <!-- USER TEAM -->
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <!--aqui debajo donde dice img/colocar el nombre del archivo que se encuentra en  la carpeta img-->
+                <img src="img/1.jpg" class="img-fluid rounded-circle w-50">
+                
+                <h3>Daniel Jose Romero</h3>
+                <p class="text-justify">
+                  Buen despertador, ayer lo Probe, hace frente a su tarea, para viajes largos una maravilla.
+                </p>
+                <div class="d-flex flex-row justify-content-center">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/2.jpg" class="img-fluid rounded-circle w-50">
+                <h3>Carlos Andrey Villamizar</h3>
+                <p class="text-justify">
+                  El producto me parecio muy bueno, el sonido es realmente fuerte, hace que este mas alerta en mi trabajo y asi evito tener  microsueños.
+                </p>
+                <div class="d-flex flex-row justify-content-center">
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/3.jpg" class="img-fluid rounded-circle w-50">
+                <h3>Climaco Efren Carvajal Basto</h3>
+                <p class="text-justify">
+                  Al principio desconfiaba, pero una vez lo use, funciono perfectamente, siento que es una herramienta que deberia tener todo chofer, es indispensable para la seguridad en la carretera. La Recomiendo 100%.
+                </p>
+                <div class="d-flex flex-row justify-content-center">
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/4.jpg" class="img-fluid rounded-circle w-50">
+                <h3>Elkin Javier Soto</h3>
+                <p class="text-justify">
+                  Este producto me salvo la vida, es mi angel de la guarda!, tuve un microsueño llegando a Bogota y si no fuera por este dispositivo, no estuviera contando el cuento.
+                </p>
+                <div class="d-flex flex-row justify-content-center">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <h3 class="text-justify font-weight-bold text-success">Pago del Envio</h3>
+            <p>
+              Recuerda que este producto es 100% gratuito, solo tienes que pagar el envio!!! <br> ¡¡¡Presiona el boton de Abajo!!!
+            </p>
+            <a href="https://biz.payulatam.com/B0cf0371707492B"><img src="http://www.payulatam.com/img-secure-2015/boton_pagar_grande.png"></a>               
+          </div>
+          <div align="right" class="col-lg-3 align-self-center">
+            <img src="img/logo1.png" style="width: 30%;"" alt="">
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-danger">
+      <div class="container p-3">
+        <div align="center">
+          <img src="img/unnamed.png" style="width: 150px; height: 150px;" class="img-fluid d-none d-sm-block">
+        <div class="row text-center text-white">
+          <div class="col ml-auto">
+            <h5 class="row text-center"> MUY IMPORTANTE. NO realices el pago sin antes leer los siguiente: Este producto es 100% gratis, vamos a regalar unicamente 30 unidades, por motivo de inaguracion de nuestra tienda.  Solo contamos con 9 unidades disponibles para esta oferta y solo  sera hasta el proximo 21 de Abril. Si usted esta interesado en aprovechar esta oferta, necesita mas informacion, tiene alguna pregunta especial y/o necesita atención personalizada, puede contactarnos, presionando el logo de whatsapp  y te re-direccionara al chat, para que haga las respectivas preguntas.   </h5>
+            <p class="text-center">103 N Tejon St, Colorado Springs <br>CO 80903, USA <br>Copyright &copy; 2020</p>
+          </div>
+        </div>
+      </div>   
+      <div>
+        <ul class="list-unstyled list-inline mt-1 text-center">
+                                
+          <li class="list-inline-item">
+          <a href="https://www.facebook.com/Kiwwi99-112450920402923/?ref=bookmarks">
+              <i class="fab fa-facebook-f"> </i>
+          </a>   
+          </li>
+         
+          <li class="list-inline-item" >
+              <a href="https://wa.me/573132122128">
+                      <i class="fab fa-whatsapp"></i>
+              </a>
+          </li>
+          <li class="list-inline-item" >
+              <a href="https://www.instagram.com/kiwwwi99/">
+              
+                      <i class="fab fa-instagram"></i>
+              </a>
+          </li>
+      </ul>
+      </div>    
+    </footer>
+
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
